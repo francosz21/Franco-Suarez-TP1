@@ -15,3 +15,26 @@ columnas = {
     'ITF': ['int', 45.0],
     'GDECCFR': ['int', 50.0]
 }
+
+#Punto 2:
+
+roles = {
+    'docente': {
+        'columnas': ['EDAD', 'ESTADO', 'REGION', 'AGLOMERADO'],
+        'criterio': 'nombre',        # Ordenado alfabéticamente
+        'orden': 'A',                # Ascendente
+        'umbral': None               
+    },
+    'investigador': {
+        'columnas': ['PONDERA', 'ESTADO', 'CAT_OCUP', 'EDAD', 'ITF', 'GDECCFR'],
+        'criterio': 'completitud',   # Ordenado por el % de completitud
+        'orden': 'B',               
+        'umbral': 60.0               #Columnas con porcentaje mayor o igual a 60
+    },
+    'analista': {
+        'columnas': ['ANO4', 'TRIMESTRE', 'ITF', 'GDECCFR', 'MAS_500'],
+        'criterio': 'completitud',   
+        'orden': 'A',                
+        'umbral': 50.0              
+    }
+}
