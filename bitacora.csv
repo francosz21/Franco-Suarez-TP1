@@ -1,0 +1,34 @@
+'''
+5. Bitácora: respondé las preguntas orientadoras (abajo) y registrá además las 
+decisiones de diseño que tomaste, los errores que encontraste y cómo los 
+resolviste. 
+
+'''
+
+
+Punto 1: Decidí utilizar un diccionario donde las claves 
+son los nombres de las columnas y los valores son tuplas
+que contienen el tipo de dato en la primera posición 
+y el porcentaje de completitud en la segunda. Esta estructura 
+resulta muy visual, directa y fácil de acceder mediante sus
+claves para trabajar con ella. Para los porcentajes de
+completitud elegí valores dentro del rango de 0 a 100%
+para simular variedad de casos reales de forma coherente.
+
+Punto 2: Diseñé un diccionario de diccionarios. 
+Es la opción más clara y escalable, ya que me permite 
+agrupar bajo la clave de cada rol toda su configuración 
+específica (columnas de interés, criterio de ordenamiento,
+sentido de orden y umbral mínimo de completitud) en una 
+sola estructura organizada. 
+
+Punto 3: Creé la función informar(columnas, roles, rol=None)
+ubicada en el módulo src/funciones.py. Definí el parámetro
+rol con valor por defecto None para que, si el usuario
+no especifica un rol, la función informe automáticamente
+todas las columnas ordenadas por completitud de forma 
+descendente. En caso de especificar un rol, la función
+aplica los filtros de umbral y el criterio de orden 
+configurado para ese rol. Importé esta función para
+probar y validar su correcto funcionamiento en
+diferentes escenarios.  
