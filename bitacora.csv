@@ -32,3 +32,16 @@ aplica los filtros de umbral y el criterio de orden
 configurado para ese rol. Importé esta función para
 probar y validar su correcto funcionamiento en
 diferentes escenarios.  
+
+Durante el desarrollo del trabajo práctico me encontré con
+algunas complicaciones al gestionar el repositorio con Git.
+El primer problema ocurrió al ejecutar por error un comando
+de Git en la terminal interactiva de Python en lugar de 
+PowerShell, lo que provocó un bucle y dejó la herramienta 
+bloqueada con un archivo temporal .git/index.lock. Para 
+solucionarlo, tuve que eliminar ese archivo de bloqueo 
+manualmente y cambiar a la consola correcta. Además, esto 
+hizo que VS Code mostrara mis archivos tp1.ipynb y 
+funciones.py como eliminados o tachados, por lo que tuve que 
+cerrar esas pestañas y reabrir los archivos 
+actualizados antes de hacer el commit y el push final a GitHub.
